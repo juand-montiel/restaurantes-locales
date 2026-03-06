@@ -2,14 +2,13 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <h1>Restaurantes de Guápiles</h1>
-      <ul>
-        <li><Link href="/casona">🍴 Restaurante La Casona</Link></li>
-        <li><Link href="/buen-sabor">🥪 Soda El Buen Sabor</Link></li>
-        <li><Link href="/delicias">🥖 Panadería Delicias</Link></li>
-      </ul>
+      <div className="menu">
+        <Link href="/casona"><button>🍴 Restaurante La Casona</button></Link>
+        <Link href="/buen-sabor"><button>🍔 Soda El Buen Sabor</button></Link>
+        <Link href="/delicias"><button>🥐 Panadería Delicias</button></Link>
+      </div>
     </div>
   );
 }
-
